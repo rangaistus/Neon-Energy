@@ -19,12 +19,20 @@
                 <li><a href="#">Solutions</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Support</a></li>
-                <ul>
+                <ul class="right">
+                    <li><a href="#"><img src="images/search.png" alt=""></a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
             </ul>
         </nav>
     </header>
+
+    <section class="grid">
+        <article>
+            <h1>Welkom op onze website!</h1>
+            <h2>Wij zijn <strong>NEON</strong>.</h2>
+        </article>
+    </section>
 
 </body>
 </html>
