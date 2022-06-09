@@ -9,6 +9,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
+    width: 100%;
 }
 
 header {
@@ -33,6 +34,7 @@ nav > ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 ul > li {
@@ -43,6 +45,19 @@ ul > li {
 
 li > a {
     text-decoration: none;
-    color: black;
-    
+    background: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+ul > ul {
+    list-style: none;
+    margin-left: 100px;
+
+}
+
+.active { 
+    color: white !important;
+    border-bottom: 1px solid greenyellow !important; 
+    padding-bottom: 5px !important; 
 }
