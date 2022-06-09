@@ -3,3 +3,46 @@
     padding: 0;
     margin: 0;
 }
+
+body {
+    background-image: url(../images/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+header {
+    padding: 0px 20px;
+    top: 40px;
+    position: relative;
+}
+
+header > a > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+header > nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav > ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ul > li {
+    list-style: none;
+    margin-left: 20px;
+
+}
+
+li > a {
+    text-decoration: none;
+    color: black;
+    
+}

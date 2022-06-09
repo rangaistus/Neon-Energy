@@ -10,7 +10,18 @@
     <title>Home - Neon</title>
 </head>
 <body>
-
+    <header>
+        <a href="#"><img src="images/Neon Logo Klein.png" alt="Neon Logo"></a>
+        <nav>
+            <ul>
+                <li><a href="index.php">Home</a></li>
+                <li><a href="#">Product</a></li>
+                <li><a href="#">Solutions</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Support</a></li>
+            </ul>
+        </nav>
+    </header>
 
 </body>
 </html>
