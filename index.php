@@ -30,10 +30,10 @@
         </nav>
     </header>
 
-    <section>
+    <section class='center'>
         <article>
             <h1>Welkom op onze website!</h1>
-            <h2>Wij zijn <strong>NEON</strong>.</h2>
+            <h2>Wij zijn <strong><b>NEON</b></strong>.</h2>
         </article>
     </section>
 

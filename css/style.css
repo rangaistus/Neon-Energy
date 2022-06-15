@@ -73,3 +73,27 @@ input[type=text] {
     font-size: 15px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center > article {
+    margin-top: 300px;
+}
+
+article > h1, h2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 80px;
+    text-align: center;
+    color: #fff;
+}
+
+strong {
+    font-size: 72px;
+    background: -webkit-linear-gradient(rgb(0, 174, 255), rgb(17, 0, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
