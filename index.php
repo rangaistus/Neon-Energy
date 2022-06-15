@@ -20,19 +20,23 @@
                 <li><a href="evenementen.php">Evenementen</a></li>
                 <li><a href="#">Support</a></li>
                 <ul class="right">
-                    <li><a href="#"><img src="images/search.png" alt=""></a></li>
+                    <li><a href="#" id="searchButton"><img src="images/search.png" alt=""></a></li>
+                    <ul id="search">
+                        <li><input type="text" placeholder="Zoeken.."></li>
+                    </ul>
                     <li><a href="#">Contact</a></li>
                 </ul>
             </ul>
         </nav>
     </header>
 
-    <section class="grid">
+    <section>
         <article>
             <h1>Welkom op onze website!</h1>
             <h2>Wij zijn <strong>NEON</strong>.</h2>
         </article>
     </section>
 
+    <script src="js/index.js"></script>
 </body>
 </html>
