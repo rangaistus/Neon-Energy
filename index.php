@@ -36,6 +36,24 @@
             <h2>Wij zijn <strong><b>NEON</b></strong>.</h2>
         </article>
     </section>
+    <?php 
+        require ('database/dbconnect.php');
+
+        echo "<h1>Huidige aanbiedingen</h1>";
+
+        $sql = "SELECET titel, omschrijving FROM aanbiedingen LIMIT 3 OFFSET 4";
+
+        if($result = $conn->query($sql)) {
+            while($row = $result->fetch_row()) {
+                echo "<h2>".$row[0]."</h2>";
+                echo "<p>".$row[1]."</p>";
+            }
+        } else {
+            echo "Error: " . $sql . "<br>" . $conn->error;
+        }
+
+
+    ?>
 
     <script src="js/index.js"></script>
 </body>
