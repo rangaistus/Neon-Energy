@@ -15,9 +15,9 @@
         <nav>
             <ul>
                 <li><a href="index.php" class="active">Home</a></li>
-                <li><a href="#">Product</a></li>
+                <li><a href="">Product</a></li>
                 <li><a href="#">Solutions</a></li>
-                <li><a href="#">About</a></li>
+                <li><a href="evenementen.php">Evenementen</a></li>
                 <li><a href="#">Support</a></li>
                 <ul class="right">
                     <li><a href="#" id="searchButton"><img src="images/search.png" alt=""></a></li>
