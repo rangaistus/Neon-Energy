@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
 
     <title>Home - Neon</title>
@@ -36,24 +37,40 @@
             <h2>Wij zijn <strong><b>NEON</b></strong>.</h2>
         </article>
     </section>
-    <?php 
+
+        <?php 
         require ('database/dbconnect.php');
-
-        echo "<h1>Huidige aanbiedingen</h1>";
-
-        $sql = "SELECET titel, omschrijving FROM aanbiedingen LIMIT 3 OFFSET 4";
-
+        
+        echo "<h1 class='aanbiedingen'>Huidige aanbiedingen</h1>";
+        
+        $sql = "SELECT titel, omschrijving FROM aanbiedingen LIMIT 3 OFFSET 4";
+        
         if($result = $conn->query($sql)) {
             while($row = $result->fetch_row()) {
-                echo "<h2>".$row[0]."</h2>";
-                echo "<p>".$row[1]."</p>";
+                echo "<section class='aanbiedingen'><h2>".$row[0]."</h2>"."<p>".$row[1]."</p>"."</section>";
             }
         } else {
             echo "Error: " . $sql . "<br>" . $conn->error;
         }
+        ?>
+
+        <?php 
+        require ('database/dbconnect.php');
+
+        echo "<h1 class='aankomende-events'>Aankomende Events</h1>";
+
+        $sql = "SELECT evenementen.datum, locaties.gebouw FROM evenementen LEFT JOIN locaties ON evenementen.locatie_id = locaties.locatie_id LIMIT 3";
+        if($result = $conn->query($sql)){
+            while ($row = $result-> fetch_row()){
+             echo "<section class='aankomende-events'><p>$row[0]".' '."$row[1]</p></section>";
+            } 
+        } else {
+            echo "Error: " . $sql . "<br>" . $conn->error;
+        }
+        ?>
 
 
-    ?>
+    
 
     <script src="js/index.js"></script>
 </body>

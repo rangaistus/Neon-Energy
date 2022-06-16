@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    
 }
 
 body {
@@ -84,7 +85,7 @@ input[type=text] {
     margin-top: 300px;
 }
 
-article > h1, h2{
+article > h1, article > h2{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 80px;
     text-align: center;
@@ -95,5 +96,50 @@ strong {
     font-size: 72px;
     background: -webkit-linear-gradient(rgb(0, 174, 255), rgb(17, 0, 255));
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+.aanbiedingen {
+    margin-left: 20px;
+    margin-top: 20px;
+    color: #fff;
+}
+
+.aanbiedingen > h2 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    color: #fff;
+}
+
+.aanbiedingen > p {
+    background: -webkit-linear-gradient(rgb(255, 255, 255), rgb(124, 124, 124));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
+}
+
+.aankomende-events {
+    margin-right: 20px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.aankomende-events > h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    color: #fff;
+}
+
+.aankomende-events > p {
+    background: -webkit-linear-gradient(rgb(255, 255, 255), rgb(124, 124, 124));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
+}
+

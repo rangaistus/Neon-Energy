@@ -1,3 +1,5 @@
+// SearchBar component
+
 // input aangeven
 let search = document.getElementById('search');
 
@@ -13,4 +15,5 @@ searchButton.addEventListener('click', function() {
     }
 
 });
+/////////////////////////////////////////////////////////////////////////////////
 
