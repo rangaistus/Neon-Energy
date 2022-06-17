@@ -16,8 +16,8 @@
         <nav>
             <ul>
                 <li><a href="index.php" class="active">Home</a></li>
-                <li><a href="">Product</a></li>
-                <li><a href="#">Solutions</a></li>
+                <li><a href="">Producten</a></li>
+                <li><a href="#">Aanbiedingen</a></li>
                 <li><a href="evenementen.php">Evenementen</a></li>
                 <li><a href="#">Support</a></li>
                 <ul class="right">
@@ -52,6 +52,7 @@
         } else {
             echo "Error: " . $sql . "<br>" . $conn->error;
         }
+        echo "<a href='producten.php' class='details'>Meer details</a>"
         ?>
 
         <?php 
