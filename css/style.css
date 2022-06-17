@@ -31,6 +31,10 @@ header > nav {
     flex-wrap: wrap;
 }
 
+ul > li > a:hover {
+    color: #fff;
+}
+
 nav > ul {
     display: flex;
     align-items: center;

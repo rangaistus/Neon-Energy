@@ -57,14 +57,17 @@
 
         <?php 
         require ('database/dbconnect.php');
-
+        echo "<section class='aankomende-events'>";
         echo "<h1 class='aankomende-events'>Aankomende Events</h1>";
 
         $sql = "SELECT evenementen.datum, locaties.gebouw FROM evenementen LEFT JOIN locaties ON evenementen.locatie_id = locaties.locatie_id LIMIT 3";
+       
         if($result = $conn->query($sql)){
+            
             while ($row = $result-> fetch_row()){
-             echo "<section class='aankomende-events'><p>$row[0]".' '."$row[1]</p></section>";
+             echo "<section><p>$row[0]".' '."$row[1]</p></section>";
             } 
+            echo "</section>";
         } else {
             echo "Error: " . $sql . "<br>" . $conn->error;
         }
