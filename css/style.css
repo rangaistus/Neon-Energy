@@ -143,3 +143,17 @@ strong {
     font-weight: 900;
 }
 
+.details {
+    text-decoration: none;
+    background-color: #fff;
+    border-radius: 25px;
+    padding: 10px 10px;
+    color: black;
+    margin-left: 15px;
+    display: flex;
+    width: 100px;
+}
+
+.details:hover {
+    background-color: gray;
+}
