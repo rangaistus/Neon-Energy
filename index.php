@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
 
-    <title>Home - Neon</title>
+    <title>Neon - Home</title>
 </head>
 <body>
     <header>
@@ -16,7 +16,7 @@
         <nav>
             <ul>
                 <li><a href="index.php" class="active">Home</a></li>
-                <li><a href="">Producten</a></li>
+                <li><a href="producten.php">Producten</a></li>
                 <li><a href="#">Aanbiedingen</a></li>
                 <li><a href="evenementen.php">Evenementen</a></li>
                 <li><a href="#">Support</a></li>
@@ -67,10 +67,12 @@
             while ($row = $result-> fetch_row()){
              echo "<section><p>$row[0]".' '."$row[1]</p></section>";
             } 
+            echo "<a href='evenementen.php' class='details'>Meer details</a>";
             echo "</section>";
         } else {
             echo "Error: " . $sql . "<br>" . $conn->error;
         }
+        
         ?>
 
 

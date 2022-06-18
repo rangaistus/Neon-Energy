@@ -4,12 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Neon - Evenementen</title>
+    <title>Neon - Producten</title>
 
-    <link rel="stylesheet" href="css/evenementen.css">
+    <link rel="stylesheet" href="css/producten.css">
 </head>
-<body>  
-
+<body>
 <header>
         <a href="#"><img src="images/Neon Logo Klein.png" alt="Neon Logo"></a>
         <nav>
@@ -30,27 +29,7 @@
         </nav>
     </header>
 
-    <section class="center">
-        <h1>Evenementen details met datum.</h1>
-        <p>Als u de datum wilt weten moet u wel onthouden dat je eerst naar Maand moet kijken daarna naar Dag en daarna naar Jaar.</p>
-        <ul>
-            <?php
-        require('database/dbconnect.php');
-        
-        $sql = "SELECT *, DATE_FORMAT(evenementen.datum, '%m %d %Y') as dag FROM evenementen LEFT JOIN locaties ON evenementen.locatie_id = locaties.locatie_id LEFT JOIN artiesten ON evenementen.artiest_id = artiesten.artiest_id";
-        
-        if($result = $conn->query($sql)){
-            while ($row = $result-> fetch_row()){
-                echo "<li class='evenementen'>".$row[18]."<br>".$row[7]."</li>";
-            } 
-        } else {
-            echo "werkt niet";
-        }
-        ?>
-        </ul>
-</section>
 
 
-<script src="js/index.js"></script>
 </body>
 </html>
