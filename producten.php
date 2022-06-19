@@ -17,7 +17,7 @@
                 <li><a href="producten.php" class="active">Producten</a></li>
                 <li><a href="aanbiedingen.php">Aanbiedingen</a></li>
                 <li><a href="evenementen.php">Evenementen</a></li>
-                <li><a href="#">Support</a></li>
+                <li><a href="#">F.A.Q</a></li>
                 <ul class="right">
                     <li><a href="#" id="searchButton"><img src="images/search.png" alt=""></a></li>
                     <ul id="search">

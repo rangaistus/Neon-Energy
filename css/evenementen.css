@@ -86,6 +86,7 @@ input[type=text] {
     display: inline-block;
     display: flex;
     flex-direction: row;
+    font-size: 14.9px;
 }
 
 .center {
