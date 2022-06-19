@@ -62,6 +62,17 @@
                         Perspiciatis, porro!</p>
                 </div>
             </div>
+            <hr class="hr-line">
+            <div class="faq-four">
+                <h1 class="faq-page">How do I contact you?</h1>
+                <div class="faq-body">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit saepe sequi, illum facere
+                        necessitatibus cum aliquam id illo omnis maxime, totam soluta voluptate amet ut sit ipsum
+                        aperiam.
+                        Perspiciatis, porro!</p>
+                </div>
+            </div>
+            
         </section>
     </main>
 
