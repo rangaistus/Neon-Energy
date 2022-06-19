@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-image: url(../images/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+header {
+    padding: 0px 20px;
+    top: 40px;
+    position: relative;
+}
+
+header > a > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+header > nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+ul > li > a:hover {
+    color: #fff;
+    border-bottom: 1px solid darkgreen;
+    padding-bottom: 5px;
+}
+
+nav > ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ul > li {
+    list-style: none;
+    margin-left: 20px;
+
+}
+
+li > a {
+    text-decoration: none;
+    color: #000;
+}
+
+.right {
+    margin-left: 70px;
+    display: flex;
+    flex-direction: row;
+}
+
+.actief { 
+    color: white !important;
+    border-bottom: 1px solid greenyellow !important; 
+    padding-bottom: 5px !important; 
+}
+
+#search {
+    display: none;
+}
+
+input[type=text] {
+    width: 200px;
+    height: 30px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding-left: 10px;
+    font-size: 15px;
+}
+
+.faq-heading{
+    border-bottom: #777;
+    padding: 125px 60px;
+    color: #fff;
+}
+
+.faq-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hr-line{
+    width: 60%;
+    margin: auto;
+}
+
+.faq-page {
+    color: #fff;
+    cursor: pointer;
+    padding: 30px 20px;
+    width: 60%;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    margin: auto;
+}
+
+.faq-body{
+    margin: auto;
+    width: 50%; 
+    padding: auto;
+}
+
+.active, 
+.faq-page:hover {
+    background-color: #333;
+}
+
+.faq-body {
+    padding: 0 18px;
+    background-color: #333;
+    display: none;
+    overflow: hidden;
+    color: #fff;
+}
+
+.faq-page:after {
+    content: '\02795';
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2796";
+}
