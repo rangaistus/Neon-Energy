@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
@@ -164,16 +166,17 @@ strong {
 
 .details {
     text-decoration: none;
-    background-color: #fff;
+    background-color: #fff;    
     border-radius: 25px;
     padding: 10px 10px;
-    color: black;
+    color: #000;
     margin-left: 15px;
     display: flex;
-    width: 100px;
+    width: 120px;
     margin-top: 5px;
 }
 
 .details:hover {
-    background-color: gray;
+    background-color: #555;
+    color: #fff;
 }

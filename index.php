@@ -17,7 +17,7 @@
             <ul>
                 <li><a href="index.php" class="active">Home</a></li>
                 <li><a href="producten.php">Producten</a></li>
-                <li><a href="#">Aanbiedingen</a></li>
+                <li><a href="aanbiedingen.php">Aanbiedingen</a></li>
                 <li><a href="evenementen.php">Evenementen</a></li>
                 <li><a href="#">Support</a></li>
                 <ul class="right">
@@ -25,7 +25,7 @@
                     <ul id="search">
                         <li><input type="text" placeholder="Zoeken.."></li>
                     </ul>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="contact.php">Contact</a></li>
                 </ul>
             </ul>
         </nav>
