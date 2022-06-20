@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
 
-    <title>Home - Neon</title>
+    <title>Neon - Home</title>
 </head>
 <body>
     <header>
@@ -16,16 +16,16 @@
         <nav>
             <ul>
                 <li><a href="index.php" class="active">Home</a></li>
-                <li><a href="">Producten</a></li>
-                <li><a href="#">Aanbiedingen</a></li>
+                <li><a href="producten.php">Producten</a></li>
+                <li><a href="aanbiedingen.php">Aanbiedingen</a></li>
                 <li><a href="evenementen.php">Evenementen</a></li>
-                <li><a href="#">Support</a></li>
+                <li><a href="faq.php">F.A.Q</a></li>
                 <ul class="right">
                     <li><a href="#" id="searchButton"><img src="images/search.png" alt=""></a></li>
                     <ul id="search">
                         <li><input type="text" placeholder="Zoeken.."></li>
                     </ul>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="contact.php">Contact</a></li>
                 </ul>
             </ul>
         </nav>
@@ -52,22 +52,27 @@
         } else {
             echo "Error: " . $sql . "<br>" . $conn->error;
         }
-        echo "<a href='producten.php' class='details'>Meer details</a>"
+        echo "<a href='aanbiedingen.php' class='details'>Meer details</a>"
         ?>
 
         <?php 
         require ('database/dbconnect.php');
-
+        echo "<section class='aankomende-events'>";
         echo "<h1 class='aankomende-events'>Aankomende Events</h1>";
 
         $sql = "SELECT evenementen.datum, locaties.gebouw FROM evenementen LEFT JOIN locaties ON evenementen.locatie_id = locaties.locatie_id LIMIT 3";
+       
         if($result = $conn->query($sql)){
+            
             while ($row = $result-> fetch_row()){
-             echo "<section class='aankomende-events'><p>$row[0]".' '."$row[1]</p></section>";
+             echo "<section><p>$row[0]".' '."$row[1]</p></section>";
             } 
+            echo "<a href='evenementen.php' class='details'>Meer details</a>";
+            echo "</section>";
         } else {
             echo "Error: " . $sql . "<br>" . $conn->error;
         }
+        
         ?>
 
 
