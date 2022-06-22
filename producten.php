@@ -14,7 +14,7 @@
         <nav>
             <ul>
                 <li><a href="index.php">Home</a></li>
-                <li><a href="producten.php" class="active">Producten</a></li>
+                <li><a href="producten.php" class="actief">Producten</a></li>
                 <li><a href="aanbiedingen.php">Aanbiedingen</a></li>
                 <li><a href="evenementen.php">Evenementen</a></li>
                 <li><a href="faq.php">F.A.Q</a></li>
@@ -36,26 +36,47 @@
         </article>
     </section>
     <section class="producten">
-        <article>
-            <h1>Neon Cherry Flavour 330ml</h1>
-            <img src="images/Neon Cherry.png" alt="Neon Cherry">
-            <button>Bestellen</button>
-        </article>
-        <article>
-            <h1>Neon Grape Flavour 330ml</h1>
-            <img src="images/Neon Grape.png" alt="Neon Grape">
-            <button>Bestellen</button>
-        </article>
-        <article>
-            <h1>Neon Lemon Flavour 330ml</h1>
-            <img src="images/Neon Lemon.png" alt="Neon Lemon">
-            <button>Bestellen</button>
-        </article>
-        <article>
-            <h1>Neon Raspberry Flavour 330ml</h1>
-            <img src="images/Neon Raspberry.png" alt="Neon Raspberry">
-            <button>Bestellen</button>
-        </article>
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade" style="text-align:center">
+            <div class="numbertext">1 / 4</div>
+            <img src="images/Neon Cherry.png" style="width:300px; height:200px;" alt="Neon Energy Cherry">
+            <div class="text">Neon Cherry</div>
+        </div>
+
+        <div class="mySlides fade" style="text-align:center">
+            <div class="numbertext">2 / 4</div>
+            <img src="images/Neon Grape.png" style="width:300px; height:200px;" alt="Neon Energy Grape">
+            <div class="text">Neon Grape</div>
+        </div>
+
+        <div class="mySlides fade" style="text-align:center">
+            <div class="numbertext">3 / 4</div>
+            <img src="images/Neon Lemon.png" style="width:300px; height:200px;" alt="Neon Energy Lemon">
+            <div class="text">Neon Lemon</div>
+        </div>
+
+        <div class="mySlides fade" style="text-align:center">
+            <div class="numbertext">4 / 4</div>
+            <img src="images/Neon Raspberry.png" style="width:300px; height:200px;" alt="Neon Energy Raspberry">
+            <div class="text">Neon Raspberry</div>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
     </section>
     <script src="js/index.js"></script>
 </body>

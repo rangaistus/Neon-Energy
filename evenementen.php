@@ -36,14 +36,18 @@
             <?php
         require('database/dbconnect.php');
         
-        $sql = "SELECT *, DATE_FORMAT(evenementen.datum, '%m %d %Y') as dag FROM evenementen LEFT JOIN locaties ON evenementen.locatie_id = locaties.locatie_id LEFT JOIN artiesten ON evenementen.artiest_id = artiesten.artiest_id";
+        $sql = "SELECT *, DATE_FORMAT(evenementen.datum, '%m %d %Y') as dag FROM evenementen
+        LEFT JOIN locaties 
+        ON evenementen.locatie_id = locaties.locatie_id 
+        LEFT JOIN artiesten 
+        ON evenementen.artiest_id = artiesten.artiest_id";
         
         if($result = $conn->query($sql)){
-            while ($row = $result-> fetch_row()){
-                echo "<li class='evenementen'><div class='datum'>".$row[18]. "</div><div class='locatie'>" .$row[7]."</div><div class='link'><a href='event-details.php?id=".$row[0]."'>meer info</a></div></li>";
-            } 
+        while ($row = $result-> fetch_row()){
+            echo "<li class='evenementen'><div class='datum'>".$row[18]. "</div><div class='locatie'>" .$row[7]."</div><div class='link'><a href='evenementen-details.php?id=".$row[0]."'>meer info</a></div></li>";
+        } 
         } else {
-            echo "werkt niet";
+            echo "query werkt niet";
         }
         ?>
         </ul>
