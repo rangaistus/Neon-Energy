@@ -111,11 +111,20 @@ input[type=text] {
 }
 
 .link {
-    color: blue;
     border: #000 3px solid;
-    background-color: #ccc;
-    font: bold 12px/12px sans-serif;
-    padding: 10px;
-    text-decoration: none;
+    background-color: #333;
+    padding: 5px;
     border-radius: 5px;
+  }
+
+  .link a {
+    color: #fff;
+    text-decoration: none;
+    font: bold 12px/12px sans-serif;
+
+  }
+
+  .link a:hover {
+    border-bottom: 1px solid #fff;
+    padding-bottom: 2px;
   }
