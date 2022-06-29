@@ -51,7 +51,7 @@
         }
         ?>
         </ul>
-</section>
+    </section>
 
 
 <script src="js/index.js"></script>
