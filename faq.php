@@ -44,7 +44,7 @@
             </div>
             <hr class="hr-line">
             <div class="faq-two">
-                <h1 class="faq-page">Why do you need an FAQ page?</h1>
+                <h1 class="faq-page">Wat zit er in Neon Energy?</h1>
                 <div class="faq-body">
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit saepe sequi, illum facere
                         necessitatibus cum aliquam id illo omnis maxime, totam soluta voluptate amet ut sit ipsum
@@ -54,7 +54,7 @@
             </div>
             <hr class="hr-line">
             <div class="faq-three">
-                <h1 class="faq-page">Does it improves the user experience of a website?</h1>
+                <h1 class="faq-page">Waar en wanneer vinden de evenementen plaats?</h1>
                 <div class="faq-body">
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit saepe sequi, illum facere
                         necessitatibus cum aliquam id illo omnis maxime, totam soluta voluptate amet ut sit ipsum
@@ -64,7 +64,7 @@
             </div>
             <hr class="hr-line">
             <div class="faq-four">
-                <h1 class="faq-page">How do I contact you?</h1>
+                <h1 class="faq-page">Hoe kan ik contact opnemen?</h1>
                 <div class="faq-body">
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit saepe sequi, illum facere
                         necessitatibus cum aliquam id illo omnis maxime, totam soluta voluptate amet ut sit ipsum

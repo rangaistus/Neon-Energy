@@ -42,25 +42,25 @@
         <!-- Full-width images with number and caption text -->
         <div class="mySlides fade" style="text-align:center">
             <div class="numbertext">1 / 4</div>
-            <img src="images/Neon Cherry.png" style="width:300px; height:200px;" alt="Neon Energy Cherry">
+            <img src="images/Neon Cherry.png" style="width:700px; height:500px;" alt="Neon Energy Cherry">
             <div class="text">Neon Cherry</div>
         </div>
 
         <div class="mySlides fade" style="text-align:center">
             <div class="numbertext">2 / 4</div>
-            <img src="images/Neon Grape.png" style="width:300px; height:200px;" alt="Neon Energy Grape">
+            <img src="images/Neon Grape.png" style="width:700px; height:500px;" alt="Neon Energy Grape">
             <div class="text">Neon Grape</div>
         </div>
 
         <div class="mySlides fade" style="text-align:center">
             <div class="numbertext">3 / 4</div>
-            <img src="images/Neon Lemon.png" style="width:300px; height:200px;" alt="Neon Energy Lemon">
+            <img src="images/Neon Lemon.png" style="width:700px; height:500px;" alt="Neon Energy Lemon">
             <div class="text">Neon Lemon</div>
         </div>
 
         <div class="mySlides fade" style="text-align:center">
             <div class="numbertext">4 / 4</div>
-            <img src="images/Neon Raspberry.png" style="width:300px; height:200px;" alt="Neon Energy Raspberry">
+            <img src="images/Neon Raspberry.png" style="width:700px; height:500px;" alt="Neon Energy Raspberry">
             <div class="text">Neon Raspberry</div>
         </div>
 

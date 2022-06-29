@@ -80,3 +80,16 @@ input[type=text] {
     padding-left: 10px;
     font-size: 15px;
 }
+
+.aanbiedingen > a > img {
+    width: 450px;
+    height: 280px;
+}
+
+.aanbiedingen {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}

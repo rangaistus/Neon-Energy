@@ -35,15 +35,20 @@
             <h1>Contact</h1>
             <form action="contact.php" method="post">
                 <label for="name">Naam</label><br>
-                <input type="text" name="name" id="name" placeholder="Naam"> <br>
+                <input type="text" name="name" id="name" placeholder="Naam" require> <br>
                 <label for="email">E-mail</label><br>
-                <input type="email" name="email" id="email" placeholder="Email"> <br>
+                <input type="email" name="email" id="email" placeholder="Email" require> <br>
                 <label for="message">Bericht</label><br>
-                <textarea name="message" id="message" cols="30" rows="5" placeholder="Bericht"></textarea> <br>
+                <textarea name="message" id="message" cols="30" rows="5" placeholder="Bericht" require></textarea> <br>
                 <input type="submit" name="submit" value="Verzenden">
 <?php
 if(isset($_POST['submit'])){
     header("Location: index.php");
     }
 ?>
-
+            </form>
+        </article>
+    </section>
+</body>
+<script src="js/index.js"></script>
+</html>

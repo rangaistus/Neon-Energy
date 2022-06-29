@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="css/evenementen-details.css">
+    <link rel="stylesheet" href="css/aanbiedingen-details.css">
 
-    <title>Neon - Evenementen Details</title>
+    <title>Neon - Aanbiedingen Details</title>
 </head>
 <body>
-<header>
+    <header>
         <a href="#"><img src="images/Neon Logo Klein.png" alt="Neon Logo"></a>
         <nav>
             <ul>
@@ -35,36 +35,21 @@
 
 require('database/dbconnect.php');
 
-
-$sql = "SELECT *, DATE_FORMAT(evenementen.datum, '%m %d %Y') as dag FROM evenementen
-LEFT JOIN locaties 
-ON evenementen.locatie_id = locaties.locatie_id 
-LEFT JOIN artiesten 
-ON evenementen.artiest_id = artiesten.artiest_id WHERE evenementen.evenement_id = ".$_GET['id'];
-
+$sql = "SELECT * FROM aanbiedingen WHERE aanbiedingen_id =".$_GET['id'];
 
 if($result = $conn->query($sql)){
-    $row = $result-> fetch_row();
-    echo "<section class='evenement_detail'>
-    <h3>Datum</h3>
-    <div class='datum'>".$row[18]."</div>
-    <h3>Artiest</h3>
-    <div class='locatie'>" .$row[11]."</div>
-    <h3>Statement</h3>
-    <div class='locatie'>" .$row[15]."</div>
-    <h3>Datum en Tijd</h3>
-    <div class='locatie'>" .$row[1]."</div>
-    <h3>Max. Bezoekers</h3>
-    <div class='locatie'>" .$row[4]."</div>
-    <h3>Plaats</h3>
-    <div class='locatie'>" .$row[6]."</div>
-    <div class='locatie'>" .$row[7]."</div>
-    </section>";
-} else {
-    echo "query werkt niet";
-}
-?>
-
+   $row = $result-> fetch_row();
+        echo "<section class='aanbiedingen'>
+        <h2>Titel</h2>
+        <div class='omschrijving'>".$row[1]. "</div>
+        <div class='datum'>" .$row[2]."</div>
+        <div class='omschrijving'>" .$row[4]."</div>
+        <div class='link-aanbiedingen'><a href='aanbiedingen.php?id=".$row[0]."'>Terug naar Pagina</a></div>
+        </section>";
+    } else {
+        echo "query werkt niet";
+    }
+    ?>
     </main>
 </body>
 </html>

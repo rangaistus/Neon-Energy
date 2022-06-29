@@ -30,7 +30,7 @@
         </nav>
     </header>
 
-    <section>
+    <section class="aanbiedingen">
         <?php
             require('database/dbconnect.php');
             $sql = "SELECT * FROM aanbiedingen";
@@ -38,7 +38,7 @@
             while ($row = $result-> fetch_array()){
                 $image = $row['afbeelding'];
         ?>
-            <a href='aanbiedingen-detail.php?id=<?php echo $row['aanbiedingen_id'];?>'><img src="aanbiedingen/<?php echo $image; ?>"  /></a>;
+            <a href='aanbiedingen-details.php?id=<?php echo $row['aanbiedingen_id'];?>'><img src="aanbiedingen/<?php echo $image; ?>"  /></a>;
         <?php
             }
             } else {

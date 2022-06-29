@@ -44,7 +44,7 @@
         
         if($result = $conn->query($sql)){
         while ($row = $result-> fetch_row()){
-            echo "<li class='evenementen'><div class='datum'>".$row[18]. "</div><div class='locatie'>".$row[7]."</div><div class='link'><a href='evenementen-details.php?id=".$row[0]."'>meer info</a></div></li>";
+            echo "<li class='evenementen'><div class='datum'>".$row[18]. "</div><div class='locatie'>".'&nbsp;'.$row[7]."</div><div class='link'><a href='evenementen-details.php?id=".$row[0]."'>meer info</a></div></li>";
         } 
         } else {
             echo "query werkt niet";

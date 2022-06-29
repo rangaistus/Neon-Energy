@@ -98,3 +98,14 @@ input[type=email] {
     font-size: 15px;
 }
 
+input[type=submit] {
+    width: 200px;
+    height: 30px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding-left: 10px;
+    font-size: 15px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}

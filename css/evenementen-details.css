@@ -81,3 +81,11 @@ input[type=text] {
     font-size: 15px;
 }
 
+.evenement_detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    color: #fff;
+}
