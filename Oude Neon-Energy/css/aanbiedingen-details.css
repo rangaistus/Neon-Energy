@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-image: url(../images/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+header {
+    padding: 0px 20px;
+    top: 40px;
+    position: relative;
+}
+
+header > a > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+header > nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+ul > li > a:hover {
+    color: #fff;
+    border-bottom: 1px solid darkgreen;
+    padding-bottom: 5px;
+}
+
+nav > ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ul > li {
+    list-style: none;
+    margin-left: 20px;
+
+}
+
+li > a {
+    text-decoration: none;
+    color: #000;
+}
+
+.right {
+    margin-left: 70px;
+    display: flex;
+    flex-direction: row;
+}
+
+.actief { 
+    color: white !important;
+    border-bottom: 1px solid greenyellow !important; 
+    padding-bottom: 5px !important; 
+}
+
+#search {
+    display: none;
+}
+
+input[type=text] {
+    width: 200px;
+    height: 30px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding-left: 10px;
+    font-size: 15px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.aanbiedingen {
+    color: #fff;
+}
+
+.link-aanbiedingen > a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.link-aanbiedingen {
+    background-color: #333;
+    width: 180px;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.link-aanbiedingen > a:hover {
+    border-bottom: 1px solid #fff;
+}
